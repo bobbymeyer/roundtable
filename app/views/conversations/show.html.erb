@@ -1,0 +1,17 @@
+  <h1 class='text-4xl font-bold'><%= @conversation.title %></h1>
+
+
+<div class="grid grid-cols-4 gap-4">
+  <div class='grid col-span-3 gap-4'>
+    <div class='bg-gray-100 shadow-xl border rounded p-8 h-[60vh]'>
+      <div class='bg-white border rounded p-2 shadow-inner h-full overflow-y-scroll flex flex-col-reverse gap-4'>
+        <%= render(ChatMessageComponent.with_collection(@chat_messages)) %>
+      </div>
+    </div>
+    <div class='bg-gray-300 rounded p-8'></div>
+  </div>
+  <div class='grid gap-4 bg-gray-300 rounded p-8 h-full'>
+    <h2 class='text-sm'>Moderator: <%= @conversation.moderator.username %></h2>
+    Participants
+  </div>
+</div>

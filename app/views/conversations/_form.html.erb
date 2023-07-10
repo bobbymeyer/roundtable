@@ -1,0 +1,7 @@
+<%= simple_form_for conversation do |f| %>
+  <div class='grid gap-4'>
+    <%= f.input :user_id, as: :hidden %>
+    <%= f.input :title %>
+    <%= f.submit class: 'bg-blue-500 rounded p-2 text-white w-min ' %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<% size ||= :md %>
+<% classes = 'text-8xl rounded-xl px-6 py-4' if size == :xl %>
+<% classes = 'text-4xl rounded-xl px-4 py-3' if size == :lg %>
+<% classes = 'text-lg rounded-lg px-4 py-3' if size == :md %>
+<% classes = 'rounded px-3 py-2' if size == :sm %>
+<% classes = 'text-sm rounded px-2 py-1' if size == :xs %>
+
+<% color ||= :black %>
+<% classes += ' bg-black text-white' if color == :black %>
+<% classes += ' bg-white text-black' if color == :white %>
+<% classes += ' bg-red-700 text-white' if color == :red %>
+<div class="font-black tracking-tighter w-min <%= classes %>">
+  R◉UNDTABLE
+</div>

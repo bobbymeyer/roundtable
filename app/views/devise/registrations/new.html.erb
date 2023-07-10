@@ -1,0 +1,41 @@
+<div class='flex justify-center align-center py-8'>
+  <div class='grid gap-4 justify-center align-center border rounded-lg p-8 shadow-xl'>
+    <div>
+      <span class='text-base'>Sign up for</span>
+      <h2 class='text-4xl font-bold w-auto pb-4 flex gap-4 items-end'><%= render 'layouts/logo', size: :lg %></h2>
+    </div>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      <div class='grid gap-4'>
+        <div class="field">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "border rounded w-full p-1" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :username %><br />
+          <%= f.text_field :username, autocomplete: "username", class: "border rounded w-full p-1" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password %>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "new-password", class: "border rounded w-full p-1" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "border rounded w-full p-1" %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Sign up", class: 'bg-blue-500 text-white p-2 rounded w-full' %>
+        </div>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
