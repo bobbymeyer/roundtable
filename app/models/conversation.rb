@@ -2,7 +2,7 @@
 
 class Conversation < ApplicationRecord
   extend FriendlyId
-  friendly_id :title, use: [:slugged, :finders]
+  friendly_id :title, use: %i[slugged finders]
 
   validates_presence_of :title
   validates_uniqueness_of :title

@@ -20,6 +20,7 @@ class InvitationsController < ApplicationController
   end
 
   private
+
   def invitation_params
     params.require(:invitation).permit(:conversation_id, :user_lookup)
   end
