@@ -1,0 +1,10 @@
+<%= turbo_frame_tag "message_form" do %>
+  <%= simple_form_for chat_message, data: { controller: "reset", action: "turbo:submit-end->reset#clear" } do |f| %>
+    <div class='flex w-full items-end w-full shadow-xl border rounded-lg'>
+      <%= f.input :user_id, as: :hidden  %>
+      <%= f.input :conversation_id, as: :hidden %>
+      <%= f.input :content, label: false, as: :string, wrapper_html: { class: 'w-full grow' }, input_html: { class: 'grow h-10 rounded-r-none rounded-l-lg' } %>
+      <%= f.submit '📩', id: 'submit-chat-message', class: 'px-4 bg-gray-800 rounded-r-lg h-10' %>
+    </div>
+  <% end %>
+<% end %>

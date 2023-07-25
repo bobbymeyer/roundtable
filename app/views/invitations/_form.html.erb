@@ -1,0 +1,10 @@
+<div id='invitation-form'>
+<%= simple_form_for invitation do |f| %>
+  <div class='grid gap-4'>
+    <%= f.input :user_lookup, label: 'Username or Email' %>
+    <%= f.input :conversation_id, as: :hidden %>
+
+    <%= f.submit class: 'bg-gray-800 rounded p-2 text-white w-min ' %>
+  </div>
+<% end %>
+</div>

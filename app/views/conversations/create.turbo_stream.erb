@@ -1,0 +1,3 @@
+<%= turbo_stream.prepend "conversations" do %>
+  <%= render ConversationComponent.new(conversation: @conversation) %>
+<% end %>

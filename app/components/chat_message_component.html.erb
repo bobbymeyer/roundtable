@@ -1,1 +1,9 @@
-<div>Add ChatMessage template here</div>
+<div class='my-2'>
+  <% if @chat_message.user == @chat_message.conversation.moderator %>
+    <span class='bg-gray-800 p-1 px-3 text-white rounded'> <b>★</b> <%= @chat_message.username %></span>
+  <% else %>
+    <span class='bg-gray-200 p-1 px-3 rounded'><%= @chat_message.username %></span>
+  <% end %>
+  <%= @chat_message.content %>
+  <i class='italic text-gray-300 text-sm inline-block'><%= time_ago_in_words(@chat_message.updated_at) %> ago</i>
+</div>

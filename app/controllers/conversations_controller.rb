@@ -1,25 +1,24 @@
 # frozen_string_literal: true
 
 class ConversationsController < ApplicationController
+  before_action :authenticate_invite!, only: %i[show]
+
   def new
     @conversation = Conversation.new(user_id: current_user.id)
   end
 
   def create
     @conversation = Conversation.new(conversation_params)
+    @conversation.save
     respond_to do |format|
-      if @conversation.save
-        format.turbo_stream do
-          render turbo_stream: turbo_stream.prepend('conversations', partial: 'conversations/conversation',
-                                                                     locals: { conversation: @conversation })
-        end
-        format.html { redirect_to conversation_path(@conversation) }
-      end
+      format.turbo_stream
+      format.html { redirect_to conversation_path(@conversation) }
     end
   end
 
   def show
     @conversation = Conversation.friendly.find(params[:id])
+    @messages = @conversation.chat_messages.reverse
   end
 
   private
@@ -28,10 +27,11 @@ class ConversationsController < ApplicationController
     params.require(:conversation).permit(:title, :user_id)
   end
 
-  def slug_candidates
-    [
-      :title,
-      [:title, :moderator_name]
-    ]
+  def authenticate_invite!
+    @conversation = Conversation.friendly.find(params[:id])
+    return if @conversation.moderator == current_user
+    return if @conversation.users.include?(current_user)
+
+    redirect_to root_path, notice: 'You are not invited to this conversation'
   end
 end

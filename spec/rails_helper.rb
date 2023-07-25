@@ -16,18 +16,7 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.clean_with(:truncation)
-  end
-
-  config.around(:each) do |example|
-    DatabaseCleaner.cleaning do
-      example.run
-    end
-  end
-
-  config.use_transactional_fixtures = false
+  config.use_transactional_fixtures = true
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
   config.include Devise::Test::ControllerHelpers, type: :controller
@@ -42,3 +31,5 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
+Devise.stretches = 1
+Rails.logger.level = 4

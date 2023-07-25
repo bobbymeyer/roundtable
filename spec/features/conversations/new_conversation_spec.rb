@@ -6,7 +6,7 @@ RSpec.describe 'Conversations', type: :feature do
     sign_in @user
   end
 
-  it 'can create a new conversation' do
+  it 'can create a new conversation', js: true do
     visit user_path(@user)
     click_link 'New Conversation'
     fill_in 'Title', with: 'Test Conversation'

@@ -31,19 +31,16 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'shoulda-matchers', '~> 5.0'
-  gem "faker", "~> 3.2"
-  gem 'database_cleaner-active_record'
+
   gem 'simplecov', require: false
+  gem 'phantomjs'
+  gem 'poltergeist'
 end
 
 gem "devise", "~> 4.9"
-
 gem "simple_form", "~> 5.2"
-
 gem "heroicon", "~> 1.0"
-
 gem "simple_form_tailwind_css", "~> 1.0"
-
 gem "view_component", "~> 3.3"
-
 gem "friendly_id", "~> 5.5"
+gem "faker", "~> 3.2"

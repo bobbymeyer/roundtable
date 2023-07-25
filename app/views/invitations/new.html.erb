@@ -1,0 +1,15 @@
+<%= render ModalComponent.new(title: "Invites") do %>
+  <% unless @conversation.users.present? %>
+    No users in this conversation
+  <% end %>
+  <div class='flex gap-2'>
+    <% @conversation.users.each do |user| %>
+      ⬤
+      <b><%= user.username %></b>
+      <i><%= user.email %></i>
+    <% end %>
+  </div>
+  <hr>
+  <h2 class='font-bold text-lg'>Invite another user</h2>
+  <%= render "form", invitation: @invitation %>
+<% end %>
