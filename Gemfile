@@ -31,10 +31,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'shoulda-matchers', '~> 5.0'
-
   gem 'simplecov', require: false
-  gem 'phantomjs'
-  gem 'poltergeist'
 end
 
 gem "devise", "~> 4.9"

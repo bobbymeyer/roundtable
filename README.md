@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a relatively simple Chat application I created to practice Rails 7 Hotwire techniques.
 
-Things you may want to cover:
+It is built with...
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby 3.0
+- Rails 7
+- PostgreSQL
+- Hotwire (Turbo/Stimulus)
+- Devise
+- Tailwind
+- jsbundling
+- cssbundling
+- Rspec
+- Capybara
