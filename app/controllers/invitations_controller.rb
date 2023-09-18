@@ -14,7 +14,7 @@ class InvitationsController < ApplicationController
       @invitation.user_id = user.id
       @invitation.save
     else
-      render turbo_stream: turbo_stream.replace("flash", partial: "layouts/flash", locals: { notice: "User Not Found" })
+      render turbo_stream: turbo_stream.replace('flash', partial: 'layouts/flash', locals: { notice: 'User Not Found' })
     end
   end
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Invitation', type: :feature do
@@ -32,7 +34,7 @@ RSpec.describe 'Invitation', type: :feature do
     conversation = FactoryBot.create(:conversation, title: 'Test Conversation', moderator: @user)
     visit conversation_path(conversation)
     click_link 'Invite Users'
-    fill_in 'Username or Email', with: "bobby@bobbymeyer.com"
+    fill_in 'Username or Email', with: 'bobby@bobbymeyer.com'
     click_button 'Create Invitation'
     expect(conversation.users.count).to eq(0)
   end

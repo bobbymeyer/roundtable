@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Rspec test for sign up
 require 'rails_helper'
 
@@ -10,6 +12,6 @@ RSpec.describe 'Sessions', type: :feature do
     fill_in 'Password', with: 'password'
     fill_in 'Password confirmation', with: 'password'
     click_button 'Sign up'
-    expect(page).to have_content("#{username}")
+    expect(page).to have_content(username.to_s)
   end
 end

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 #
 # Uncomment this and change the path if necessary to include your own
 # components.
@@ -23,12 +24,12 @@ SimpleForm.setup do |config|
     b.optional :min_max
     b.optional :readonly
 
-    b.use :label, class: "block text-sm font-medium text-gray-700"
+    b.use :label, class: 'block text-sm font-medium text-gray-700'
     b.use :input,
-      class: 'appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm',
-      error_class: 'block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md'
+          class: 'appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm',
+          error_class: 'block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md'
     b.use :full_error, wrap_with: { tag: 'p', class: 'mt-2 text-sm text-red-600' }
-    b.use :hint,  wrap_with: { tag: :p, class: "mt-2 text-sm text-gray-500" }
+    b.use :hint, wrap_with: { tag: :p, class: 'mt-2 text-sm text-gray-500' }
   end
 
   config.wrappers :prepend_string, tag: 'div', class: '', error_class: '', valid_class: '' do |b|
@@ -40,16 +41,16 @@ SimpleForm.setup do |config|
     b.optional :min_max
     b.optional :readonly
 
-    b.use :label, class: "block text-sm font-medium text-gray-700"
+    b.use :label, class: 'block text-sm font-medium text-gray-700'
 
     b.wrapper tag: 'div', class: 'mt-1 flex rounded-md shadow-sm' do |d|
       d.use :prepend
       d.use :input,
-        class: "flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300",
-        error_class: "flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-red-500 focus:border-red-500 sm:text-sm border-red-300 text-red-900 placeholder-red-300"
+            class: 'flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300',
+            error_class: 'flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-r-md focus:ring-red-500 focus:border-red-500 sm:text-sm border-red-300 text-red-900 placeholder-red-300'
     end
-    b.use :full_error, wrap_with: { tag: "p", class: "mt-2 text-sm text-red-600" }
-    b.use :hint,  wrap_with: { tag: :p, class: "mt-2 text-sm text-gray-500" }
+    b.use :full_error, wrap_with: { tag: 'p', class: 'mt-2 text-sm text-red-600' }
+    b.use :hint, wrap_with: { tag: :p, class: 'mt-2 text-sm text-gray-500' }
   end
 
   config.wrappers :append_string, tag: 'div', class: '', error_class: '', valid_class: '' do |b|
@@ -61,16 +62,16 @@ SimpleForm.setup do |config|
     b.optional :min_max
     b.optional :readonly
 
-    b.use :label, class: "block text-sm font-medium text-gray-700"
+    b.use :label, class: 'block text-sm font-medium text-gray-700'
 
     b.wrapper tag: 'div', class: 'mt-1 flex rounded-md shadow-sm' do |d|
       d.use :input,
-        class: "flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-l-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300",
-        error_class: "flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-l-md focus:ring-red-500 focus:border-red-500 sm:text-sm border-red-300 text-red-900 placeholder-red-300"
+            class: 'flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-l-md focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border-gray-300',
+            error_class: 'flex-1 min-w-0 block w-full px-3 py-2 rounded-none rounded-l-md focus:ring-red-500 focus:border-red-500 sm:text-sm border-red-300 text-red-900 placeholder-red-300'
       d.use :append
     end
-    b.use :full_error, wrap_with: { tag: "p", class: "mt-2 text-sm text-red-600" }
-    b.use :hint,  wrap_with: { tag: :p, class: "mt-2 text-sm text-gray-500" }
+    b.use :full_error, wrap_with: { tag: 'p', class: 'mt-2 text-sm text-red-600' }
+    b.use :hint, wrap_with: { tag: :p, class: 'mt-2 text-sm text-gray-500' }
   end
 
   config.wrappers :corner_hint, tag: :div do |b|
@@ -82,15 +83,15 @@ SimpleForm.setup do |config|
     b.optional :min_max
     b.optional :readonly
 
-    b.wrapper tag: :div, class: "flex justify-between", error_class: nil, valid_class: nil do |c|
-      c.use :label, class: "block text-sm font-medium text-gray-700"
-      c.use :hint,  wrap_with: { tag: :span, class: "text-sm text-gray-500" }
+    b.wrapper tag: :div, class: 'flex justify-between', error_class: nil, valid_class: nil do |c|
+      c.use :label, class: 'block text-sm font-medium text-gray-700'
+      c.use :hint,  wrap_with: { tag: :span, class: 'text-sm text-gray-500' }
     end
 
     b.use :input,
-      class: "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm",
-      error_class: "block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md"
-    b.use :full_error, wrap_with: { tag: "p", class: "mt-2 text-sm text-red-600" }
+          class: 'appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm',
+          error_class: 'block w-full pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm rounded-md'
+    b.use :full_error, wrap_with: { tag: 'p', class: 'mt-2 text-sm text-red-600' }
   end
 
   # The default wrapper to be used by the FormBuilder.
@@ -136,7 +137,7 @@ SimpleForm.setup do |config|
   # config.item_wrapper_class = nil
 
   # How the label text should be generated altogether with the required text.
-  config.label_text = lambda { |label, required, explicit_label| "#{label}" }
+  config.label_text = ->(label, _required, _explicit_label) { label.to_s }
 
   # You can define the class to use on all labels. Default is nil.
   # config.label_class = nil
@@ -169,7 +170,7 @@ SimpleForm.setup do |config|
   config.wrapper_mappings = {
     string: :default,
     prepend_string: :prepend_string,
-    append_string: :append_string,
+    append_string: :append_string
   }
 
   # Namespaces where SimpleForm should look for custom input classes that

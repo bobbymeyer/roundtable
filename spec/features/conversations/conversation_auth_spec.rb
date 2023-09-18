@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Conversations have an invite list', type: :feature do
@@ -14,7 +16,7 @@ RSpec.describe 'Conversations have an invite list', type: :feature do
 
   it 'invited users can see it' do
     conversation = FactoryBot.create(:conversation, title: 'Test Conversation', slug: 'test-conversation')
-    invitation = FactoryBot.create(:invitation, user: @user, conversation: conversation)
+    FactoryBot.create(:invitation, user: @user, conversation: conversation)
     visit conversation_path(conversation)
     expect(page).to have_content('Test Conversation')
   end

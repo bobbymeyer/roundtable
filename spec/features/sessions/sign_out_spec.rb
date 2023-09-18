@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Rspec test for sign up
 require 'rails_helper'
 
@@ -9,8 +11,8 @@ RSpec.describe 'Sessions', type: :feature do
 
   it 'signs me out' do
     visit '/'
-    expect(page).to have_content("#{@user.username}")
+    expect(page).to have_content(@user.username.to_s)
     click_button 'Log Out'
-    expect(page).to_not have_content("#{@user.username}")
+    expect(page).to_not have_content(@user.username.to_s)
   end
 end

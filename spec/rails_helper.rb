@@ -1,13 +1,14 @@
+# frozen_string_literal: true
+
 require 'simplecov'
 SimpleCov.start
 
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 require 'capybara/rspec'
-
 
 begin
   ActiveRecord::Migration.maintain_test_schema!

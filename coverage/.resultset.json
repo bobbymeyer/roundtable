@@ -4,6 +4,8 @@
       "/Users/bobby/Projects/roundtable/config/environment.rb": {
         "lines": [
           null,
+          null,
+          null,
           1,
           null,
           null,
@@ -12,6 +14,8 @@
       },
       "/Users/bobby/Projects/roundtable/config/application.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -38,6 +42,8 @@
       },
       "/Users/bobby/Projects/roundtable/config/boot.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -46,6 +52,8 @@
       },
       "/Users/bobby/Projects/roundtable/config/environments/test.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           null,
@@ -113,6 +121,8 @@
           null,
           null,
           null,
+          null,
+          null,
           1,
           null,
           null,
@@ -126,6 +136,7 @@
       },
       "/Users/bobby/Projects/roundtable/config/initializers/content_security_policy.rb": {
         "lines": [
+          null,
           null,
           null,
           null,
@@ -182,6 +193,8 @@
           null,
           null,
           null,
+          null,
+          null,
           1,
           null,
           null
@@ -189,6 +202,8 @@
       },
       "/Users/bobby/Projects/roundtable/config/initializers/friendly_id.rb": {
         "lines": [
+          null,
+          null,
           null,
           null,
           null,
@@ -325,6 +340,7 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
@@ -340,11 +356,13 @@
           null,
           null,
           null,
+          null,
           null
         ]
       },
       "/Users/bobby/Projects/roundtable/config/initializers/simple_form.rb": {
         "lines": [
+          null,
           null,
           null,
           null,
@@ -559,6 +577,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/factories/chat_messages.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -571,16 +591,20 @@
       },
       "/Users/bobby/Projects/roundtable/spec/factories/conversations.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
-          1,
-          3,
+          2,
+          4,
           null,
           null
         ]
       },
       "/Users/bobby/Projects/roundtable/spec/factories/invitations.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -591,17 +615,21 @@
       },
       "/Users/bobby/Projects/roundtable/spec/factories/users.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
+          19,
           15,
-          12,
-          15,
+          19,
           null,
           null
         ]
       },
       "/Users/bobby/Projects/roundtable/config/routes.rb": {
         "lines": [
+          null,
+          null,
           1,
           1,
           1,
@@ -738,6 +766,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/features/conversations/chat_message_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -761,6 +791,7 @@
           1,
           1,
           1,
+          null,
           1,
           1,
           null,
@@ -769,6 +800,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/features/conversations/conversation_auth_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -792,8 +825,38 @@
           null
         ]
       },
+      "/Users/bobby/Projects/roundtable/spec/features/conversations/delete_conversation_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/bobby/Projects/roundtable/spec/features/conversations/new_conversation_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -814,6 +877,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/features/conversations/new_invitation_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -859,6 +924,8 @@
         "lines": [
           null,
           null,
+          null,
+          null,
           1,
           null,
           1,
@@ -874,10 +941,11 @@
       "/Users/bobby/Projects/roundtable/spec/features/sessions/sign_in_spec.rb": {
         "lines": [
           null,
-          1,
+          null,
           null,
           1,
           null,
+          1,
           1,
           1,
           1,
@@ -891,6 +959,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/features/sessions/sign_out_spec.rb": {
         "lines": [
+          null,
+          null,
           null,
           1,
           null,
@@ -912,6 +982,8 @@
       "/Users/bobby/Projects/roundtable/spec/features/sessions/sign_up_spec.rb": {
         "lines": [
           null,
+          null,
+          null,
           1,
           null,
           1,
@@ -930,6 +1002,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/models/chat_message_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -963,6 +1037,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/models/conversation_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -994,6 +1070,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/models/invitation_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -1015,6 +1093,8 @@
       },
       "/Users/bobby/Projects/roundtable/spec/models/user_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -1048,19 +1128,28 @@
           null,
           null,
           1,
-          6,
-          6,
-          null,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
           7,
           7,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          8,
+          8,
           3,
           null,
           1,
@@ -1116,8 +1205,8 @@
           null,
           1,
           1,
-          5,
-          5,
+          6,
+          6,
           null,
           null
         ]
@@ -1157,6 +1246,6 @@
         ]
       }
     },
-    "timestamp": 1690400224
+    "timestamp": 1695072313
   }
 }

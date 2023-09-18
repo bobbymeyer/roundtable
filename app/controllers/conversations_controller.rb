@@ -21,6 +21,15 @@ class ConversationsController < ApplicationController
     @messages = @conversation.chat_messages.reverse
   end
 
+  def destroy
+    @conversation = Conversation.friendly.find(params[:id])
+    @conversation.destroy
+    respond_to do |format|
+      format.turbo_stream
+      format.html { redirect_to user_path(current_user), notice: 'Conversation was successfully deleted.' }
+    end
+  end
+
   private
 
   def conversation_params

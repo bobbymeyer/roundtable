@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Write RSPEC tests for the landing page
 
 require 'rails_helper'

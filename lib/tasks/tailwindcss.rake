@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # TAILWIND_COMPILE_COMMAND = "#{RbConfig.ruby} #{Pathname.new(__dir__).to_s}/../../exe/tailwindcss -i '#{Rails.root.join("app/assets/stylesheets/application.tailwind.css")}' -o '#{Rails.root.join("app/assets/builds/tailwind.css")}' -c '#{Rails.root.join("config/tailwind.config.js")}' --minify"
 # SIMPLE_FORM_TAILWIND_GEMDIR = `bundle show simple_form_tailwind_css`
 #
